@@ -1,0 +1,62 @@
+.judulberita1 {
+  position: absolute;
+  top: 20px;
+  font-size: 70px;
+  right: 50px;
+  color: black;
+}
+
+.card-container {
+  width: 300px; /* atur sesuai kebutuhan */
+  border-radius: 14px;
+  overflow: hidden; /* biar sudut melengkung */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  font-family: sans-serif;
+}
+
+/* bagian gambar */
+
+
+/* bagian paragraf */
+.card-container p {
+  background-color: rgba(60,60,60,0.45); /* abu abu transparan */
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px); /* opsional */
+}
+.judulscrollbox {
+  position: absolute;
+  top: 1650px;
+  font-size: 40px;
+  right: 40px;
+}
+
+
+.scroll-box {
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  border: 2px solid #333;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  right: 40px;
+  top: 1750px;
+}
+
+.scroll-box a {
+  display: block;
+  color: #0066cc;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.scroll-box a:hover {
+  text-decoration: underline;
+  color: darkred;
+}

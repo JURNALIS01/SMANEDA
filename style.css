@@ -1,0 +1,157 @@
+body {
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* mencegah scroll horizontal */
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.backround {
+  width: 100%;             /* penuh lebar */
+  height: 620px;           /* tinggi bisa diubah */
+  background-color: #00ff15;
+  background-size: cover;  /* biar cover seluruh area */
+  background-position: center; /* posisikan di tengah */
+  background-repeat: no-repeat; /* jangan diulang */
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.taman {
+  width: 100%;             /* penuh lebar */
+  height: 620px;           /* tinggi bisa diubah */
+  background-image: url('taman.jpg'); /* ganti dengan path gambarmu */
+  background-size: cover;  /* biar cover seluruh area */
+  background-position: center; /* posisikan di tengah */
+  background-repeat: no-repeat; /* jangan diulang */
+}
+.berita {
+    width: 100%;             /* penuh lebar */
+  height: 620px;           /* tinggi bisa diubah */
+  background-image: url('berita.jpg'); /* ganti dengan path gambarmu */
+  background-size: cover;  /* biar cover seluruh area */
+  background-position: center; /* posisikan di tengah */
+  background-repeat: no-repeat; /* jangan diulang */
+
+}
+.logo {
+  background-image: url('logo.jpg'); /* ganti dengan path gambarmu */
+  background-repeat: no-repeat; /* jangan diulang */
+  width: 150px; /* sesuaikan ukuran */
+  height: 180px; /* sesuaikan ukuran */
+  position: absolute;
+  top: 35px; /* jarak dari atas */
+  left: 8px; /* jarak dari kiri */
+  background-size: 150px 180px; /* sesuaikan ukuran */
+  
+}
+.abc {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    
+}
+.JUDUL {
+    text-align: center;
+    font-size: 70px;
+    left: 50%;
+    z-index: 10;
+}
+.judulborder {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+.counter {
+  font-size: 70px;
+  font-weight: bold;
+  color: #333;
+  margin: 30px;
+  text-align: center;
+  z-index: 10;
+}
+
+.border {
+  border: solid 5px black;
+  padding: 10px 5px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+.besar {
+  position: absolute;
+  top: 40px;
+  font-size: 70px;
+  right: 50%;
+  left: 50%;
+  color: whitesmoke;
+}
+.judulparagraf {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Bagian luar container */
+header, footer {
+  background: gray;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container khusus belah dua */
+.container {
+  display: flex;
+  height: 1000px; /* contoh tinggi */
+  top: 0;
+  max-height: 800px;
+}
+
+.kiri {
+  flex: 1;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+}
+
+.kanan {
+  flex: 1;
+  background: lightcoral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.garisluar {
+  border: solid 5px black;
+  padding: 20px 10px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  min-height: 650px;
+}
+.konter1 {
+  font-size: 100px;
+  color: rgb(42, 42, 43);
+}

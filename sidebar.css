@@ -1,0 +1,78 @@
+
+.menu-btn {
+  position: fixed;
+  background-color: rgb(131, 131, 131);
+  padding: 7px 10px;
+  border-radius: 2px;
+  display: block;
+  cursor: pointer;
+  
+}
+span {
+  color: rgba(255,255,255, 0.8);
+}
+.sidebar {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 130px;
+  height: 200px;
+  background-color: rgba(255,255,255, 0.5);
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  transform: translateX(-100%); /* ini penting supaya sembunyi */
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.sidebar.active {
+  transform: translateX(0); /* ini penting supaya nampak */
+  text-decoration: underline;
+}
+
+
+.menu-btn.active {
+  position: fixed;
+  background-color: rgb(131, 131, 131);
+  padding: 7px 10px;
+  border-radius: 2px;
+  display: block;
+  cursor: pointer;  
+  left: 131px;
+}
+/* Warna link mengikuti warna teks induknya (atau ganti ke warna yang kamu mau) */
+a {
+  color: inherit;              /* atau misal: color: #111; */
+  text-decoration: none; /* atau none, sesuai kebutuhan */
+  text-underline-offset: 2px;  /* opsional: jarak underline biar rapi */
+}
+
+/* Setelah dikunjungi tetap sama */
+a:visited {
+  color: inherit;              /* atau sama seperti di atas */
+  text-decoration: none;
+}
+
+/* Saat hover/aktif/fokus tetap tidak jadi biru, tetap bergaris bawah */
+a:hover,
+a:active,
+a:focus {
+  color: inherit;              /* atau warna yang sama seperti a */
+  text-decoration: underline;
+}
+
+/* Opsional: hilangkan highlight biru saat tap di Android/Chrome */
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+.sidebar a {
+  display: block;        /* biar tiap link ke bawah */
+  margin: 2px 0;         /* jarak atas-bawah 8px */
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+}
+.sidebar a:hover {
+  background-color: rgb(83, 77, 77); /* warna saat hover */
+  text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+.goib {
+  color: white;
+}
+.bungkus {
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.bawah {
+  position: relative;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 200px;
+  background: #111;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* bagi 4 sama lebar */
+}
+
+.bawah div {
+  left: 10px;
+  line-height: 20px;
+  color: white;
+}
+.bagian1,
+.bagian2,
+.bagian3,
+.bagian4 {
+  cursor: pointer;
+}
+.bagian1:hover,
+.bagian2:hover,
+.bagian3:hover,
+.bagian4:hover {
+  background: blue;
+  transition: 0.3s;
+  text-decoration: underline;
+}

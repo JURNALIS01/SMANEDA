@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Struktur Kelas</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to top left, #ff4ecb, #7b2ff7);
+      font-family: Arial, sans-serif;
+      color: white;
+      height: 600px;
+        animation: latar 10s infinite alternate;
+    }
+    @keyframes latar{
+        
+    }
+    .struktur {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      background: rgba(0,0,0,0.5);
+      padding: 25px 40px;
+      border-radius: 25px;
+      margin: 10px;
+      position: relative;
+      text-align: center;
+    }
+
+    /* Garis vertikal */
+    .box::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      background: white;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+    }
+
+    /* Hilangkan garis di level terakhir */
+    .no-line::after {
+      display: none;
+    }
+
+    /* Level anak (wakil, bendahara, sekretaris) */
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: relative;
+      margin-top: 30px;
+    }
+
+    /* Garis horizontal antar anak */
+    .row::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="struktur">
+    <!-- Ketua -->
+    <div class="box">Ketua Kelas</div>
+
+    <!-- Wakil -->
+    <div class="row">
+      <div class="box">Wakil Ketua</div>
+    </div>
+
+    <!-- Bendahara 1 & 2 -->
+    <div class="row">
+      <div class="box">Bendahara 1</div>
+      <div class="box">Bendahara 2</div>
+    </div>
+
+    <!-- Sekretaris 1 & 2 -->
+    <div class="row">
+      <div class="box no-line">Sekretaris 1</div>
+      <div class="box no-line">Sekretaris 2</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.judulpengumuman {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.judulpengumuman span {
+  display: inline-block;
+  opacity: 0;
+}
+
+/* animasi masuk dari arah berbeda */
+@keyframes fromLeftTop {
+  0%   { transform: translate(-80px, -80px); opacity: 0; }
+  100% { transform: translate(0,0); opacity: 1; }
+}
+
+@keyframes fromLeftBottom {
+  0%   { transform: translate(-80px, 80px); opacity: 0; }
+  100% { transform: translate(0,0); opacity: 1; }
+}
+
+@keyframes fromRightTop {
+  0%   { transform: translate(80px, -80px); opacity: 0; }
+  100% { transform: translate(0,0); opacity: 1; }
+}
+
+@keyframes fromRightBottom {
+  0%   { transform: translate(80px, 80px); opacity: 0; }
+  100% { transform: translate(0,0); opacity: 1; }
+}
